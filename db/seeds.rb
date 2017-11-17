@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-Cocktail.destroy_all
+Cocktail.delete_all
 
 urls = ["https://cdn.liquor.com/wp-content/uploads/2015/03/hub_classic_cocktail_margarita.jpg",
   "https://cdn.liquor.com/wp-content/uploads/2015/03/hub_classic_cocktail_bloodymary.jpg",
