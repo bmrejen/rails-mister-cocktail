@@ -4,10 +4,13 @@
 <h4>Doses</h4>
 <% @cocktail.doses.each do |d| %>
 <p><%= d.description + ' ' + d.ingredient.name %>
-<%= link_to "Edit dose", edit_cocktail_dose_path(d) %> </p>
+<%= link_to "Edit dose", edit_cocktail_dose_path(d) %>
+<%= link_to "Delete dose", dose_path(d.id), method: :delete, data: { confirm: "Are you sure?"} %>
+</p>
 <% end %>
 
 <%= link_to "Add new dose", new_cocktail_dose_path(@cocktail.id) %>
+
 <p>
 <%= link_to "Edit cocktail", edit_cocktail_path(@cocktail.id) %>
 <%= link_to "Delete cocktail", cocktail_path(@cocktail.id), method: :delete, data: { confirm: "Are you sure?"} %>
@@ -15,3 +18,8 @@
 <p>
 <%= link_to "Back to Cocktails", cocktails_path %>
 </p>
+
+<!-- remember the DELETE path is the same as the SHOW path
+  delete dose : path = dose_path(d.id) inside the loop
+
+ -->
