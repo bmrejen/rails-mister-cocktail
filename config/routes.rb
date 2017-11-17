@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   end
   resources :doses, only: [:destroy]
   # because we don't need "Destroy dose path" to be nested --too complicated
+
+  mount Attachinary::Engine => "/attachinary"
+
 end

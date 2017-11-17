@@ -1,5 +1,6 @@
 <%= simple_form_for(@cocktail) do |f| %>
 <%= f.input :name, placeholder: "eg. Mojito" %>
+<%= f.input :photo, as: :attachinary %>
 <%= f.submit "Submit", class: "btn btn-primary btn-lg" %>
 
 <% end %>
