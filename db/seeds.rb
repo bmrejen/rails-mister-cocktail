@@ -22,4 +22,4 @@ urls = ["https://cdn.liquor.com/wp-content/uploads/2015/03/hub_classic_cocktail_
   cocktail.photo_url = url # Upload happens here
 end
 
-"Seeded OK"
+puts "Seeded OK"
