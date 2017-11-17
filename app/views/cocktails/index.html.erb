@@ -1,6 +1,6 @@
-<h1>The cocktails</h1>
-
 <div class="container">
+<%= render 'banner' %>
+<p> </p>
   <div class="row">
     <% @cocktails.each do |c| %>
     <div class="col-xs-12 col-sm-4">
@@ -20,6 +20,4 @@
 </div>
 </div>
 
-  <p>
-    <%= link_to "New cocktail", new_cocktail_path, class: "btn btn-primary btn-lg"  %>
-  </p>
+
